@@ -1,0 +1,64 @@
+/*universal selector*/
+* {
+    margin: 0;
+    padding: 0;
+}
+/*navigation menu bar's css*/
+#nav_menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background-color: #4bcf61;
+}
+#nav_menu ul li {
+    float: left;
+}
+#nav_menu ul li a {
+    display: block;
+    width: 60px;
+    text-align: center;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: #4bcf61;
+    color: white;
+}
+#nav_menu a.current {
+    background-color: #3fad51;
+}
+#nav_menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+#nav_menu ul ul li {
+    float: none;
+}
+#nav_menu ul li:hover > ul {
+    display: block;
+}
+#nav_menu > ul::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+@media only screen and (max-width: 959px) {}
+/* mobile landscape to tablet portrait */
+
+@media only screen and (max-width: 767px) {
+    body {
+        font-size: 95%;
+    }
+}
+/* mobile portrait to mobile landscape */
+
+@media only screen and (max-width: 479px) {
+    body {
+        font-size: 90%;
+    }
+}
+/*applying background color and font color*/
+html {
+    background-color: #2a2a2a;
+    color: white;
+}
